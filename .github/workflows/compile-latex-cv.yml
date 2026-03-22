@@ -1,0 +1,44 @@
+name: Compile LaTeX CV
+
+on:
+  push:
+    branches:
+      - main
+      - master
+    paths:
+      - "assets/latex/cv.tex"
+      - "assets/latex/resume.cls"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compile-cv:
+    name: Compile cv.tex to cv.pdf
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: cv.tex
+          working_directory: assets/latex
+          latexmk_use_xelatex: false
+          latexmk_shell_escape: false
+          extra_system_packages: "py-pygments"
+          args: "-pdf -interaction=nonstopmode -output-directory=."
+
+      - name: Copy PDF to assets/pdf
+        run: |
+          mkdir -p assets/pdf
+          cp assets/latex/cv.pdf assets/pdf/cv.pdf
+
+      - name: Commit compiled PDF
+        run: |
+          git config --global user.name "${{ github.actor }}"
+          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+          git add assets/pdf/cv.pdf
+          git diff --cached --quiet || git commit -m "chore: compile cv.tex to cv.pdf"
+          git push

@@ -37,3 +37,25 @@
 @use "font-awesome/brands";
 @use "font-awesome/solid";
 @use "font-awesome/regular";
+
+/* Remove border-top on first year header after a section title */
+.publications h2:not(.bibliography) + h2.bibliography {
+  border-top: none;
+  padding-top: 0;
+  margin-top: 0.5rem;
+}
+
+/* Research Interests list spacing */
+.research-interests-list li {
+  margin-bottom: 0.7rem;
+}
+
+/* Social icons under profile photo */
+.contact-icons-small a {
+  font-size: 1.5rem;
+  margin: 0 4px;
+}
+.contact-icons-small i,
+.contact-icons-small svg {
+  font-size: 1.5rem;
+}

@@ -1,0 +1,25 @@
+teaching:
+  - name: Engineering Economics
+    code: CEE3230
+    terms: Spring 2026
+    institution: Cornell
+  - name: Uncertainty Analysis in Engineering
+    code: CEE3040
+    terms: Fall 2023, Fall 2024
+    institution: Cornell
+  - name: Modeling and Optimization for Smart Cities
+    code: CEE4665
+    terms: Spring 2022
+    institution: Cornell
+  - name: Probability and Statistics for Engineers
+    code: CEE202
+    terms: Summer 2020 – Spring 2021
+    institution: UIUC
+
+reviewer:
+  - "IEEE Intelligent Vehicles Symposium (IV 2026)"
+  - "AAAI Conference on Artificial Intelligence (AAAI 2026)"
+  - "Conference on Neural Information Processing Systems (NeurIPS 2025)"
+  - "IEEE International Conference on Intelligent Transportation Systems (ITSC 2025)"
+  - "Learning for Dynamics & Control Conference (L4DC 2024)"
+  - "Robotics: Science and Systems (RSS 2024)"

@@ -45,18 +45,50 @@
 
       .abbr {
         margin-bottom: 0.5rem;
+        position: relative;
+        z-index: 50;
+        overflow: visible;
 
         abbr {
           display: inline-block;
           background-color: var(--global-theme-color);
           margin-bottom: 0.5rem;
           color: var(--global-card-bg-color) !important;
+          font-size: 0.85rem;
+          padding: 0.45em 0.55em;
+          text-decoration: none;
+          position: relative;
 
           a {
             color: white;
 
             &:hover {
               text-decoration: none;
+            }
+          }
+
+          &.venue-tip[data-tip] {
+            &::after {
+              content: attr(data-tip);
+              position: absolute;
+              bottom: calc(100% + 6px);
+              left: 50%;
+              transform: translateX(-50%);
+              background: #333;
+              color: #fff;
+              font-size: 0.82rem;
+              font-weight: normal;
+              white-space: nowrap;
+              padding: 0.4em 0.7em;
+              border-radius: 5px;
+              pointer-events: none;
+              opacity: 0;
+              transition: opacity 0.1s ease;
+              z-index: 9999;
+            }
+
+            &:hover::after {
+              opacity: 1;
             }
           }
         }

@@ -1,9 +1,56 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+# Conferences (archival, peer-reviewed) — blue
+"ICLR":
+  name: "International Conference on Learning Representations"
+  color: "#4dabf7"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"ITSC":
+  name: "IEEE International Conference on Intelligent Transportation Systems"
+  color: "#4dabf7"
 
-"Vision":
-  color: "#009f36"
+"TRISTAN":
+  name: "Triennial Symposium on Transportation Analysis"
+  color: "#4dabf7"
+
+"CogMI":
+  name: "IEEE International Conference on Cognitive Machine Intelligence"
+  color: "#4dabf7"
+
+# Non-archival (workshops, posters, oral presentations) — light red
+"NeurIPS-W":
+  name: "NeurIPS Workshop on Math-AI"
+  color: "#e06c75"
+
+"IPCO":
+  name: "International Conference on Integer Programming and Combinatorial Optimization"
+  color: "#e06c75"
+
+"INFORMS":
+  name: "INFORMS Annual Meeting"
+  color: "#e06c75"
+
+# Journals — amber
+"EJOR":
+  name: "European Journal of Operational Research"
+  color: "#fdcb6e"
+
+"TRC":
+  name: "Transportation Research Part C: Emerging Technologies"
+  color: "#fdcb6e"
+
+"JRI":
+  name: "Journal of Risk and Insurance"
+  color: "#fdcb6e"
+
+"COR":
+  name: "Computers & Operations Research"
+  color: "#fdcb6e"
+
+# Preprint — gray
+"Preprint":
+  name: "arXiv Preprint"
+  color: "#b2bec3"
+
+# Work in Progress — gray
+"WIP":
+  name: "Work in Progress"
+  color: "#b2bec3"

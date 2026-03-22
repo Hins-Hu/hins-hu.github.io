@@ -1,0 +1,27 @@
+snowboarding:
+  intro: >
+    I've been snowboarding since college and it's become one of my favorite ways to reset.
+    There's something about carving down a mountain on a board that no paper deadline can compete with.
+    My style leans toward <strong>trees</strong>, <strong>freeride</strong>, and <strong>backcountry</strong> — the less groomed, the better.
+    I hold an <strong><a href="https://www.aasi.org/" target="_blank">AASI</a> Level 1 snowboarding instructor certification</strong> and have spent time teaching beginners —
+    turns out explaining edge control to a 7-year-old is harder than designing an algorithm.
+  photos:
+    - path: assets/img/personal/big-sky-bc.jpg
+      caption: "◆◆◆ Hike up to a triple black in Big Sky, MT"
+    - path: assets/img/personal/ski-aspen-peak.jpg
+      caption: "At the peak, Aspen, CO"
+    - path: assets/img/personal/ski-steamboat-trees.jpg
+      caption: "In the trees at Steamboat, CO"
+
+cat:
+  intro: >
+    This is Lottie. She showed up in my life when I was doing my internship in Seattle and
+    has since taken over my my keyboard and my sofa bed. She is unimpressed by my research but very interested in my snacks.
+    <strong>Uptime</strong>: 100%. <strong>Bugs</strong>: many. <strong>No plan to deprecate</strong>.
+  photos:
+    - path: assets/img/personal/cat-sofa.jpg
+      caption: "Lottie on the sofa"
+    - path: assets/img/personal/cat-3mo.jpg
+      caption: "Napping in the sun at 3 months old"
+    - path: assets/img/personal/cat-out.jpg
+      caption: "First time outside. Not thrilled."

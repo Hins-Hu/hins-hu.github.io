@@ -13,3 +13,14 @@ assets/rendercv/rendercv_output/*.typ
 Gemfile.lock
 node_modules/
 vendor
+
+# Logs
+*.log
+
+# One-off scripts
+edit_profile_pic.py
+
+# Root-level scratch files (images/PDFs belong in assets/)
+/*.jpg
+/*.png
+/*.pdf
