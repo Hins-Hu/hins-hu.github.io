@@ -1,0 +1,226 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+\usepackage[left=0.7in,top=0.7in,right=0.7in,bottom=0.7in]{geometry} % Document margins
+
+
+
+%----------------------------------------------------------------------------------------
+%   DOCUMENT START
+%----------------------------------------------------------------------------------------
+\name{Zhaoxuan (Hins) Hu} % Your name
+\address{(217)-693-2283 \\ zh223@cornell.edu \\ GitHub: \href{https://github.com/Hins-Hu/}{hins-hu} \\ LinkedIn: \href{https://www.linkedin.com/in/hins-hu/}{hins-hu}}
+
+% \href{www.github.com/hins-hu}{GitHub} \\ \href{www.linkedin.com/in/hins-hu}{LinkedIn}} %Your phone number and email
+
+\begin{document}
+\title{Hins Resume}
+%----------------------------------------------------------------------------------------
+%   EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+% \begin{rSection}{Availability}
+% I am available \textbf{from May 7, 2024 to August 31, 2024}, which covers all summer internship cycles
+% \end{rSection}
+
+% \begin{rSection}{Availability}
+% \vspace{0.1cm}
+% I am available \textbf{from May 7, 2024 to August 31, 2024}, which covers all summer internship cycles
+% \end{rSection}
+
+\vspace{0.2cm}
+\begin{rSection}{Education}
+\vspace{0.2cm}
+\begin{rSubsection}{Cornell University}{Aug. 2021 - May 2026 (Expected)}{Ph.D. in Systems Engineering}{Ithaca, NY}
+\item Minor in Computer Science (AI) and Operations Research (Mathematical Programming)
+\item Focus on applying recent advancements (e.g., deep RL and LLM) in machine learning to solve (sequential) hard combinatorial optimization problems.
+\end{rSubsection}
+% \vspace{-0.2cm}
+\begin{rSubsection}{University of Illinois at Urbana-Champaign}{Aug. 2019 - May 2021}{M.Sc. in Systems Engineering}{Urbana, IL}
+\item[]
+\vspace{-0.7cm}
+\end{rSubsection}
+% \vspace{-0.2cm}
+\begin{rSubsection}{South China University of Technology}{Aug. 2015 - June 2019}{B.Eng. in Engineering (First Class Honor)}{Guangzhou, China}
+% \item Exchange to Western University (Canada) in 2018-2019
+\item[]
+\vspace{-0.7cm}
+\end{rSubsection}
+\end{rSection}
+
+
+\begin{rSection}{Work Experience}
+\vspace{0.2cm}
+
+\begin{rSubsection}{PhD Software Engineer Intern}{August 2025 - December 2025}{Google}{Mountain View, CA}
+\item Host Team: Google Cloud - AI Flow 
+\item Built core AI workflows to enable seamless LLM adoption in downstream products and surfaces.
+\item Focused on the supervised fine-tuning and knowledge distillation of hybrid encoder-decoder Gemini models on text related-tasks. 
+\end{rSubsection}
+
+\vspace{0.1cm}
+
+\begin{rSubsection}{PhD Machine Learning Engineer Intern}{May 2025 - August 2025}{Meta}{Bellevue, WA}
+\item Host Team: Modern Recommendation Systems (MRS) - AI Knowledge
+\item Contributed to the cross-surface HSTU model for generating embeddings that capture long-context user-item interactions, leading to a 0.2\% (Normalized Entropy) NE gain in top-line engagement metrics of the downstream ranking system, such as comment, like, and share.
+\item Extended the module to integrate State Space Models (i.e., Mamba) for enhanced sequence modeling.
+\end{rSubsection}
+% \begin{rSubsection}{Pilot test of AI-powered micro-transit systems}{Jan. 2023 - May 2024}{Software Engineer, Remote}{Chattanooga Transit Agency}
+% \item Contributed to the vehicle routing algorithms leveraging open-source engines like OSRM and Valhalla.
+% \item Built tools to analyze mobility-energy efficiency of the deployed micro-transit system in target areas.
+% \item Experienced in handling millions of ride requests and high-dimensional geospatial data.
+% \end{rSubsection}
+\end{rSection}
+
+% \vspace{0.2cm}
+\begin{rSection}{Selected Projects}
+\vspace{0.3cm}
+% \begin{rSubsection}{Learning for branch-and-cut}{Apr. 2023 - Present}{}{}
+% \item Explore learning strategies to assist the tuning process of hyperparameters such as node selection, variable selection, and cut selection that are used in the classical branch-and-cut algorithm to solve a variety of combinatorial optimization problems
+% \end{rSubsection}
+\begin{rSubsection}{LLM Benchmark for Heuristics in Combinatorial Optimization}{Nov. 2024 - Oct. 2025}{}{}
+\item Contributed to an agentic benchmark for LLM-crafted heuristics in real-world NP-hard combinatorial optimization problems across various domains and problem types.
+\item Introducing Quality-Yield Index (QYI) – a unified metric for solution feasibility and quality.
+\item Revealing that even SOTA models (e.g., Gemini-Pro) achieve less than 60\% of expert performance.
+\item Refer to the project \href{https://cornell-zhang.github.io/heurigym/}{website} and \href{https://github.com/cornell-zhang/heurigym}{GitHub Repo} for more details.
+\end{rSubsection}
+
+\begin{rSubsection}{Learning algorithms for reliable online shortest path problems}{Oct. 2025 – Present}{}{}
+\item Investigate the novel reliable online shortest path problem that accounts for both mean and standard deviation in path travel times.
+\item Developed a provably efficient Lower Confidence Bound (LCB) algorithm for learning routing strategies within a combinatorial multi-armed bandit framework.    
+\end{rSubsection}
+
+\begin{rSubsection}{End-to-end deep learning for combinatorially constrained MDP}{May 2025 - Present}{}{}
+\item Developed an end-to-end constrained optimization learning framework to solve the Markov decision process (MDP) with combinatorially constrained action space and tested it in ride-sharing systems.
+\item Designed a GPT-based sequence model to learn massive offline trajectories of on-demand ride-sharing fleets given by classical myopic optimization algorithms.
+\end{rSubsection}
+
+
+\begin{rSubsection}{GNN for the algorithmic speed-up in ride-pool matching}{Nov. 2023 - Nov. 2024}{}{}
+\item Developed a GNN-based supervised learning model to prune the request-trip-vehicle graph used for generating candidate shared trips.
+\item The learning-augmented framework outperforms the hand-crafted heuristic counterpart by a 5x speed-up while maintaining a negligible impact on the solution quality.
+\end{rSubsection}
+
+% \begin{rSubsection}{Reinforcement learning for the pick-up and delivery problem}{Nov. 2023 - Present}{}{}
+% \item Developed an optimization-embedded deep reinforcement learning approach to solve the offline pick-up and delivery problems with service time windows.
+% \item The approach outperforms the conventional model predictive control (MPC) algorithms and the state-of-the-art deterministic optimization solver (e.g., LKH3).
+% \end{rSubsection}
+
+\begin{rSubsection}{Vehicle routing problems in the semi-autonomous environment}{Jan. 2022 - June 2023}{}{}
+\item Formulated a novel vehicle routing problem tailored to road networks with limited real-time support for autonomous vehicles.
+\item Formulated a mixed-integer linear program (MILP) for the problem. Designed and implemented a two-phase tractable algorithm to effectively solve the problem of practical size.
+\end{rSubsection}
+
+% \begin{rSubsection}{Approximation Algorithms for Robust Shortest Path Problems}{Mar. 2022 - Present}{}{}
+% \item Conducted a theoretical review of an NP-hard problem called the absolute robust shortest path problem (ARSP) and investigated its characteristics under various uncertainty sets of travel cost. 
+% \item Devised an approximation algorithm to solve the ARSP under a convex hull uncertainty set of travel cost, with the goal of proving a constant approximation ratio of the algorithm.
+
+% \end{rSubsection}
+% \begin{rSubsection}{\href{https://publish.illinois.edu/cyber-risk/research-team-2/}{Cyber risk assessment for capital allocation}}{Jan. 2020 - Nov.2021}{}{}
+% \item Proposed a data-verified stochastic loss model to capture the unique dynamics of cyber risk.
+% \item Derived an optimal decision framework for risk managers to allocate ex-ante investment and ex-post loss reserve in cyber security.
+% % \item Paper draft (R. Feng, W. Chong, L. Zhang, and H. Hu) submitted to \textit{\href{https://www.jri.pub/}{journal of risk and insurance}}.
+% \end{rSubsection}
+
+
+
+% \vspace{1 cm}
+% \begin{rSubsection}{Next-generation multi-modal ride-sharing}{Oct. 2021 - April 2023}{}{}
+% \item Designed an operational-level multi-modal ride-sharing system that seamlessly integrates mass transit and the first-and-last mile on-demand ride-sharing service.
+% \item Devised an online optimization algorithm to generate nearly optimal strategies for request-vehicle matching, vehicle routing, and vehicle re-balancing, ensuring efficient operations of the system.
+% % \item Conducted extensive simulations of the system with batched online requests sampled from a million taxi trips in NYC, providing valuable insights into the system's performance.
+% % \item Paper draft (D. Edirimanna, H. Hu, S. Samaranayake) submitted to \textit{\href{https://aamas2022-conference.auckland.ac.nz}{AAMAS 2022}}
+% \end{rSubsection}
+
+% \begin{rSubsection}{\href{https://publish.illinois.edu/cyber-risk/research-team-2/}{Cyber risk assessment for capital allocation}}{Jan. 2020 - Nov.2021}{}{}
+% \item Proposed a real-world-data-verified stochastic loss model to capture the unique dynamics of cyber risk.
+% \item Derived an optimal decision framework for risk managers to allocate ex-ante investment and ex-post loss reserve in cyber security.
+% % \item Paper draft (R. Feng, W. Chong, L. Zhang, and H. Hu) submitted to \textit{\href{https://www.jri.pub/}{journal of risk and insurance}}.
+% \end{rSubsection}
+
+% \begin{rSubsection}{Others}{}{}{}
+% \item XXX
+% \end{rSubsection}
+\end{rSection}
+
+\begin{rSection}{Selected Coursework}
+% \vspace{-0.3cm}
+\item \textbf{EECS:} Machine Learning, Deep Generative Models, Reinforcement Learning, Data Structure, Algorithm Design, Numerical Analysis, Simulation, Control Systems, Database Systems
+\item \textbf{Optimization:} Mathematical Programming (Linear, Nonlinear, Mixed-Integer), Optimization Under Uncertainty, Combinatorial Optimization, Optimization of Logistics Systems
+\end{rSection}
+
+\begin{rSection}{Selected Publication}
+\item \textbf{H. Hu}, et al. \textit{Column Generation for the Micro-Transit Zoning Problem}, Submitted to IJCAI 2026
+
+\item S. Pradhan, B. Geary, \textbf{H. Hu}, et al., \textit{Hierarchical Reinforcement Learning for Designing Micro-Transit Zones}, Submitted to IJCAI 2026
+
+\item \textbf{H. Hu}, R. Goswami, H. Jiang, S. Samarananyake, \textit{Optimal micro-transit zoning via clique
+generation and integer programming}, IEEE ITSC 2025
+
+\item H. Chen, Y. Wang, Y. Cai, \textbf{H. Hu}, J. Li, et al., \textit{HeuriGym: an agentic benchmark for LLM-crafted heuristics in combinatorial optimization}, NeurIPS 2025 MATH-AI workshop and ICLR 2026
+
+\item Y. Kim, S. Li, \textbf{H. Hu}, W. Ouyang, S. Samaranayake, C. Wu, \textit{Learning to prune: fast feasible trip generation for high-capacity ridepooling}, TRISTAN 2025.
+
+\item \textbf{H. Hu}, S. Samarananyake, \textit{Vehicle routing problems in the age of semi-autonomous driving}, In revision for the European Journal of Operational Research.
+
+\item D. Edirimanna, \textbf{H. Hu}, S. Samarananyake, \textit{Integrating on-demand ride-sharing with mass transit at-scale}, In revision for Transportation Research Part C: Emerging Technologies.
+\item M. Zalesak{$^*$}, \textbf{H. Hu}{$^*$}, S. Samarananyake, \textit{Ride-pool assignment algorithms: swapping heuristics and modern implementation}, Computers \& Operations Research. $^*$ \textit{Equal contributions}
+\end{rSection}
+
+\begin{rSection}{Skills}
+Programming (Python, C++, MATLAB), Optimization Software (Gurobi), Machine Learning (PyTorch, PyG), Statistical Analysis (R), Database (SQL), Scientific Visualization
+\end{rSection}
+
+\begin{rSection}{Honors}
+AWS Cloud Computing Grant (2024, Amazon), Graduate Student Fellowship (2021, Cornell), Summer Block Grant (2020, UIUC),  Scholarship for International Exchange Program (2018, CSC), Annual Academic Scholarship (2015-2018, SCUT)
+\end{rSection}
+
+\begin{rSection}{Professional Service}
+I have served as reviewer for the following journals and conferences:
+\begin{itemize}
+    \renewcommand{\labelitemi}{-}
+    \item The IEEE Intelligent Vehicles Symposium (IV 2026)
+    \item The 40th Annual AAAI Conference on Artificial Intelligence (AAAI 2026)
+    \item The Conference on Neural Information Processing Systems (NeurIPS 2025) 
+    \item IEEE International Conference on Intelligent Transportation Systems (ITSC 2025)
+    \item Learning for Dynamics \& Control Conference (L4DC 2024)
+    \item Robotics: Science and Systems Conference (RSS 2024)
+\end{itemize}
+\end{rSection}
+
+\begin{rSection}{Appointments}
+\begin{rSubsection}{Teaching Assistant}{}{}{}
+    \item Engineering Economics (CEE3230), Spring 2026
+    \item Uncertainty Analysis in Engineering (CEE3040), Fall 2023, Fall 2024, Cornell
+    \item \href{https://classes.cornell.edu/browse/roster/SP22/class/CEE/4665}{Modeling and Optimization for Smart Cities (CEE4665)}, Spring 2022, Cornell
+    \item Probability and Statistics for Engineers (CEE202), Summer 2020 - Spring 2021, UIUC
+\end{rSubsection}
+\begin{rSubsection}{Research Assistant}{}{}{}
+    \item US NSF/DOE Projects, Spring 2023, Spring 2024, Spring 2025, Cornell 
+    \item\href{https://math.illinois.edu /illinois-risk-lab/home}{IRisk Lab},  Fall 2020 - Spring 2021, Department of Mathematics, UIUC
+\end{rSubsection}
+\end{rSection}
+
+\end{document}
+
+
+
