@@ -194,12 +194,56 @@ Replace with your new photo. Keep the same filename.
 
 ---
 
-## Workflow: Push to Publish
+## Deployment Workflow
+
+### How it works
+
+```
+你编辑的文件 (main 分支)
+        │
+        │  git push
+        ▼
+  GitHub Actions
+  自动编译 Jekyll → 生成静态 HTML/CSS/JS
+        │
+        ▼
+   gh-pages 分支
+  （编译结果，不要手动碰）
+        │
+        ▼
+  GitHub Pages 对外提供网站
+  https://hins-hu.github.io/
+```
+
+- **`main` 分支** — 你的源代码（Markdown、YAML、BibTeX 等），只改这里
+- **`gh-pages` 分支** — 自动生成的静态文件，不要手动修改
+
+### 日常更新步骤
 
 ```bash
-git add .
-git commit -m "Update: describe what you changed"
+# 1. 修改本地文件（_pages/, _news/, _bibliography/, _data/ 等）
+
+# 2. 提交并推送
+git add <修改的文件>
+git commit -m "update: 描述你改了什么"
 git push
 ```
 
-GitHub Actions will build and deploy automatically. Changes are live in ~1–2 minutes.
+**就这两步。** 之后 GitHub Actions 自动跑，1–3 分钟后网站更新。
+
+### 确认部署成功
+
+推送后在以下地址查看 Actions 进度：
+```
+https://github.com/Hins-Hu/hins-hu.github.io/actions
+```
+
+- 绿色 ✅ → 部署完成，刷新网站即可看到更新
+- 红色 ❌ → 编译出错，点进去看 log 找原因
+
+### 注意事项
+
+- **不需要**手动操作 `gh-pages` 分支
+- **不需要**修改 GitHub Actions 配置（`.github/workflows/`）
+- **不需要**本地安装 Jekyll 或 LaTeX（CV 也是自动编译的）
+- 如果修改了 `_config.yml`，注意 YAML 语法——字符串含冒号时要加引号
