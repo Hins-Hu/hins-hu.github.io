@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-01'
+  last_updated: '2026-05-15'
 papers:
   WyWtfOsAAAAJ:2osOgNQ5qMEC:
     citations: 0
@@ -13,9 +13,9 @@ papers:
     citations: 0
     title: Column Generation for the Micro-Transit Zoning Problem
     year: '2026'
-  WyWtfOsAAAAJ:UeHWp8X0CEIC:
-    citations: 0
-    title: 'Ride-pool Assignment Algorithms: Modern Implementation and Swapping Heuristics'
+  WyWtfOsAAAAJ:Tyk-4Ss8FVUC:
+    citations: 1
+    title: Toward User Preference Alignment in LLM Recommendation via Explicit Context Feedback
     year: '2025'
   WyWtfOsAAAAJ:d1gkVwhDpl0C:
     citations: 0
