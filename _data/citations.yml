@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-15'
+  last_updated: '2026-05-20'
 papers:
   WyWtfOsAAAAJ:2osOgNQ5qMEC:
     citations: 0
@@ -17,12 +17,16 @@ papers:
     citations: 1
     title: Toward User Preference Alignment in LLM Recommendation via Explicit Context Feedback
     year: '2025'
+  WyWtfOsAAAAJ:Y0pCki6q_DkC:
+    citations: 0
+    title: 'Ride-pool assignment algorithms: Swapping heuristics and efficient implementation'
+    year: '2026'
   WyWtfOsAAAAJ:d1gkVwhDpl0C:
     citations: 0
     title: Vehicle Routing Problems in the Age of Semi-Autonomous Driving
     year: '2025'
   WyWtfOsAAAAJ:qjMakFHDy7sC:
-    citations: 6
+    citations: 7
     title: 'HeuriGym: An Agentic Benchmark for LLM-Crafted Heuristics in Combinatorial Optimization'
     year: '2025'
   WyWtfOsAAAAJ:u-x6o8ySG0sC:
