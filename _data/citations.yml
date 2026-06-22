@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-03'
+  last_updated: '2026-06-22'
 papers:
   WyWtfOsAAAAJ:2osOgNQ5qMEC:
     citations: 0
@@ -14,19 +14,19 @@ papers:
     title: Column Generation for the Micro-Transit Zoning Problem
     year: '2026'
   WyWtfOsAAAAJ:Tyk-4Ss8FVUC:
-    citations: 1
+    citations: 2
     title: Toward User Preference Alignment in LLM Recommendation via Explicit Context Feedback
     year: '2025'
   WyWtfOsAAAAJ:Y0pCki6q_DkC:
     citations: 0
-    title: 'Ride-pool assignment algorithms: Swapping heuristics and efficient implementation'
+    title: 'Ride-pool assignment algorithms: Swapping heuristics and modern implementation'
     year: '2026'
   WyWtfOsAAAAJ:d1gkVwhDpl0C:
     citations: 0
     title: Vehicle Routing Problems in the Age of Semi-Autonomous Driving
     year: '2025'
   WyWtfOsAAAAJ:qjMakFHDy7sC:
-    citations: 17
+    citations: 20
     title: 'HeuriGym: An Agentic Benchmark for LLM-Crafted Heuristics in Combinatorial Optimization'
     year: '2025'
   WyWtfOsAAAAJ:u-x6o8ySG0sC:
@@ -34,6 +34,6 @@ papers:
     title: Optimal Micro-Transit Zoning via Clique Generation and Integer Programming
     year: '2025'
   WyWtfOsAAAAJ:u5HHmVD_uO8C:
-    citations: 18
+    citations: 20
     title: Cyber risk assessment for capital management
     year: '2025'
