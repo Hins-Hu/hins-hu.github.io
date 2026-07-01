@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-22'
+  last_updated: '2026-07-01'
 papers:
   WyWtfOsAAAAJ:2osOgNQ5qMEC:
     citations: 0
@@ -26,7 +26,7 @@ papers:
     title: Vehicle Routing Problems in the Age of Semi-Autonomous Driving
     year: '2025'
   WyWtfOsAAAAJ:qjMakFHDy7sC:
-    citations: 20
+    citations: 22
     title: 'HeuriGym: An Agentic Benchmark for LLM-Crafted Heuristics in Combinatorial Optimization'
     year: '2025'
   WyWtfOsAAAAJ:u-x6o8ySG0sC:
